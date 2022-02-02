@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (locationResult != null) {
                     Location location = locationResult.getLastLocation();
-                    txtLocation.setText(String.format("Latitude = "+ location.getLongitude()+" \n\nLongitude = "+ location.getLongitude()));
+                    txtLocation.setText(String.format("Latitude = "+ location.getLongitude()+" \n\nLongitude = "+ location.getLongitude()+" \n\nAltitude = "+ location.getAltitude()+" \n\nAccuracy = "+ location.getAccuracy()));
                 }
             }
         };
